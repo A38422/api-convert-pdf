@@ -9,8 +9,8 @@ run this application stand-alone, this is not recommended. For normal usage, you
 latest stable image off DockerHub and run it like this:
 
 ```shell
-docker pull alephdata/convert-document
-docker run -p 3000:3000 -ti alephdata/convert-document
+docker pull minhdt/convert-document
+docker run -p 3000:3000 -ti minhdt/convert-document
 ```
 
 Once the service has initialised, files can be sent to the `/convert` endpoint, and a PDF version
@@ -25,7 +25,7 @@ curl -o out.pdf -F format=pdf -F 'file=@mydoc.doc' http://localhost:3000/convert
 To build, run:
 
 ```shell
-docker build --rm -t alephdata/convert-document .
+docker build --rm -t minhdt/convert-document .
 ```
 
 To get a development shell:
