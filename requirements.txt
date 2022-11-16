@@ -1,0 +1,6 @@
+Flask==1.1.2
+pantomime==0.4.1
+gunicorn[gthread]==20.0.4
+psutil==5.8.0
+uno==0.3.3
+setuptools==65.5.0
